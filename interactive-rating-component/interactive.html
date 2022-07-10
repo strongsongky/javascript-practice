@@ -5,7 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Interactive rating component</title>
         <link rel="stylesheet" sype="text/css" href="interactive.css">
-    </head>
+		
+	</head>
     <body>
         <div class="rating-state">
             <div class="star">
@@ -17,11 +18,21 @@
                 to help us improve our offering!
             </p>
             <div class="rating-numbers">
-                <button class="number">1</button>
-				<button class="number">2</button>
-				<button class="number">3</button>
-				<button class="number">4</button>
-				<button class="number">5</button>
+                <input type="radio" name="ratings" id="rating1">
+                <label for="rating1">1</label>
+
+                <input type="radio" name="ratings" id="rating2">
+                <label for="rating2">2</label>
+
+                <input type="radio" name="ratings" id="rating3">
+                <label for="rating3">3</label>
+
+                <input type="radio" name="ratings" id="rating4">
+                <label for="rating4">4</label>
+
+                <input type="radio" name="ratings" id="rating5">
+                <label for="rating5">5</label>
+                
             <button type="submit">SUBMIT</button>
             </div>
         </div>
@@ -32,7 +43,7 @@
             </div>
             <div class="selection-mention">
                 <p class="selection-letters">
-                    You selected 3 out of 5
+                    You selected out of 5
                 </p>
             </div>
             <p class="thanks">Thank you!</p>
@@ -41,5 +52,6 @@
                 don't hesitate to get in touch!
             </p>
         </div>
+		<script src="interactive.js"> </script>
     </body>
 </html>
