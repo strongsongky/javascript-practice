@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Interactive rating component</title>
-        <link rel="stylesheet" sype="text/css" href="interactive.css">
-		
-	</head>
-    <body>
-        <div class="rating-state">
-            <div class="star">
-                <img src="./images/icon-star.svg" alt="star-icon">
-            </div>
-            <div class="question">How did we do?</div>
-            <p class="content">
-                Please let us know how we did with your support request. All feedback is appreciated 
-                to help us improve our offering!
-            </p>
-            <div class="rating-numbers">
-                <input type="radio" name="ratings" id="rating1">
-                <label for="rating1">1</label>
-
-                <input type="radio" name="ratings" id="rating2">
-                <label for="rating2">2</label>
-
-                <input type="radio" name="ratings" id="rating3">
-                <label for="rating3">3</label>
-
-                <input type="radio" name="ratings" id="rating4">
-                <label for="rating4">4</label>
-
-                <input type="radio" name="ratings" id="rating5">
-                <label for="rating5">5</label>
-                
-            <button type="submit">SUBMIT</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" sype="text/css" href="interactive.css" />
+  </head>
+  <body>
+    <div class="rating-state">
+      <div class="choose-modal">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="star-icon" />
         </div>
+        <div class="question">How did we do?</div>
+        <p class="content">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="rating-numbers">
+          <input value="1" type="radio" name="ratings" id="rating1" />
+          <label for="rating1">1</label>
 
-        <div class="rating-state hidden">
-            <div class="illust">
-                <img src="./images/illustration-thank-you.svg" alt="illust">
-            </div>
-            <div class="selection-mention">
-                <p class="selection-letters">
-                    You selected out of 5
-                </p>
-            </div>
-            <p class="thanks">Thank you!</p>
-            <p class="msg">
-                We appreciate you taking the time to give a rating. If you ever need more support, 
-                don't hesitate to get in touch!
-            </p>
+          <input value="2" type="radio" name="ratings" id="rating2" />
+          <label for="rating2">2</label>
+
+          <input value="3" type="radio" name="ratings" id="rating3" />
+          <label for="rating3">3</label>
+
+          <input value="4" type="radio" name="ratings" id="rating4" />
+          <label for="rating4">4</label>
+
+          <input value="5" type="radio" name="ratings" id="rating5" />
+          <label for="rating5">5</label>
+
+          <button disabled class="submit">SUBMIT</button>
         </div>
-		<script src="interactive.js"> </script>
-    </body>
+      </div>
+
+      <div class="result-modal hidden">
+        <div class="illust">
+          <img src="./images/illustration-thank-you.svg" alt="illust" />
+        </div>
+        <div class="selection-mention">
+          <!-- <p class="selection-letters">You selected out of 5</p> -->
+        </div>
+        <p class="thanks">Thank you!</p>
+        <p class="msg">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script src="interactive.js"></script>
+  </body>
 </html>
