@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url("images/bg-intro-mobile.png");
+  background-size: cover;
+  margin: 0 auto;
+  font-size: 16px;
+  background-repeat: repeat;
+  background-size: auto 50rem;
+}
+
+.main-container {
+  background: rgba(255, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: row;
+}
+
+.explain {
+  color: white;
+  width: 30rem;
+  text-align: left;
+  padding-right: 1rem;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  margin-top: 5rem;
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 4rem;
+  line-height: 1.5rem;
+}
+
+button p {
+  margin-bottom: 0;
+}
+
+.forms {
+  width: 35rem;
+}
+
+.try-btn {
+  width: 100%;
+  background: hsl(248, 32%, 49%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0px 7px 2px 0px hsl(0, 56%, 61%);
+  cursor: pointer;
+}
+
+.input-form {
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  margin: 2rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0px 7px 2px 0px hsl(0, 56%, 61%);
+}
+
+input {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  width: 85%;
+  height: 3rem;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border: 1px solid rgb(224, 214, 214);
+  border-radius: 0.2rem;
+}
+
+.submit-btn {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: hsl(154, 59%, 51%);
+  border: none;
+  box-shadow: 0px 1px 1px 3px hsl(154, 49%, 45%);
+  color: white;
+  cursor: pointer;
+}
+
+.input-form p {
+  font-size: 0.7rem;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  color: hsl(246, 25%, 77%);
+}
+
+.input-form span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+.error-msg {
+  display: none;
+  margin-top: 0.3rem;
+  width: 85%;
+  text-align: end;
+  color: hsl(0, 100%, 74%);
+  font-size: 0.7rem;
+}
