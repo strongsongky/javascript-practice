@@ -107,6 +107,10 @@ input {
   font-weight: 700;
 }
 
+.error-icon {
+  display: none;
+}
+
 .error-msg {
   display: none;
   margin-top: 0.3rem;
@@ -114,4 +118,8 @@ input {
   text-align: end;
   color: hsl(0, 100%, 74%);
   font-size: 0.7rem;
+}
+
+.error input:focus {
+  color: hsl(0, 100%, 74%);
 }
